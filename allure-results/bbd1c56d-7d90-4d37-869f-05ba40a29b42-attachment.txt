@@ -1,0 +1,89 @@
+Exception occurred while clicking logout link locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('li a:has-text("Logout")')
+    - locator resolved to <a href="http://localhost/opencart/upload/index.php?route=account/logout">Logout</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    50 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+    at MyAccountPage.clkLogout (E:\My_Learnings\Playwrigh_Typescript\opencart\pages\MyAccountPage.ts:26:34)
+    at E:\My_Learnings\Playwrigh_Typescript\opencart\tests\LogoutTest.spec.ts:55:23 {
+  Symbol(step): {
+    location: {
+      file: 'E:\\My_Learnings\\Playwrigh_Typescript\\opencart\\pages\\MyAccountPage.ts',
+      line: 26,
+      column: 34,
+      function: 'MyAccountPage.clkLogout'
+    },
+    category: 'pw:api',
+    title: `Click locator('li a:has-text("Logout")')`,
+    apiName: 'locator.click',
+    params: { selector: 'li a:has-text("Logout")', strict: true, timeout: 0 },
+    group: undefined,
+    stepId: 'pw:api@43',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@43',
+      _title: `Click locator('li a:has-text("Logout")')`,
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    recoverFromStepError: [AsyncFunction: recoverFromStepError],
+    complete: [Function: complete],
+    endWallTime: 1756533653814,
+    error: {
+      message: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('li a:has-text("Logout")')\x1B[22m\n` +
+        '\x1B[2m    - locator resolved to <a href="http://localhost/opencart/upload/index.php?route=account/logout">Logout</a>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    50 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is not visible\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n',
+      stack: 'Error: locator.click: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        `\x1B[2m  - waiting for locator('li a:has-text("Logout")')\x1B[22m\n` +
+        '\x1B[2m    - locator resolved to <a href="http://localhost/opencart/upload/index.php?route=account/logout">Logout</a>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is not visible\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    50 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is not visible\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\n' +
+        '    at MyAccountPage.clkLogout (E:\\My_Learnings\\Playwrigh_Typescript\\opencart\\pages\\MyAccountPage.ts:26:34)\n' +
+        '    at E:\\My_Learnings\\Playwrigh_Typescript\\opencart\\tests\\LogoutTest.spec.ts:55:23',
+      cause: undefined
+    }
+  }
+}

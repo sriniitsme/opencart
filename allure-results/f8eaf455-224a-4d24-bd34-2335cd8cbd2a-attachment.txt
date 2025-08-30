@@ -1,0 +1,11 @@
+Exception occured while entering first name ReferenceError: page is not defined
+    at RegistrationPge.enterFirstName (E:\My_Learnings\Playwrigh_Typescript\opencart\pages\RegistrationPage.ts:47:13)
+    at E:\My_Learnings\Playwrigh_Typescript\opencart\tests\AccountRegistration.spec.ts:17:5
+    at E:\My_Learnings\Playwrigh_Typescript\opencart\node_modules\playwright\lib\worker\workerMain.js:309:9
+    at E:\My_Learnings\Playwrigh_Typescript\opencart\node_modules\playwright\lib\worker\testInfo.js:326:11
+    at TimeoutManager.withRunnable (E:\My_Learnings\Playwrigh_Typescript\opencart\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (E:\My_Learnings\Playwrigh_Typescript\opencart\node_modules\playwright\lib\worker\testInfo.js:324:7)
+    at E:\My_Learnings\Playwrigh_Typescript\opencart\node_modules\playwright\lib\worker\workerMain.js:307:7
+    at WorkerMain._runTest (E:\My_Learnings\Playwrigh_Typescript\opencart\node_modules\playwright\lib\worker\workerMain.js:282:5)
+    at WorkerMain.runTestGroup (E:\My_Learnings\Playwrigh_Typescript\opencart\node_modules\playwright\lib\worker\workerMain.js:194:11)
+    at process.<anonymous> (E:\My_Learnings\Playwrigh_Typescript\opencart\node_modules\playwright\lib\common\process.js:65:22)
