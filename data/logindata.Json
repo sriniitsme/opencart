@@ -9,20 +9,20 @@
     "testName": "Invalid login",
     "email": "abcxyz@xyz.com",
     "password": "abcxyx",
-    "expected": "failure"
+    "expected": "nomatch"
   },
 
   {
     "testName": "Invalid username",
     "email": "test@gmail.com",
     "password": "test@123",
-    "expected": "failure"
+    "expected": "locked"
   },
   
   {
     "testName": "Invalid password",
     "email": "test123@gmail.com",
     "password": "abcxyx",
-    "expected": "failure"
+    "expected": "locked"
   }
 ]
