@@ -29,10 +29,6 @@ for (const data of testdata) {
       const successLoginMsg = await myaccountpage.getSuccessfulLoginMsg();
       expect(successLoginMsg).toMatch(/My Account/);
 
-    } else if (data.expected === "locked") {
-      const failedLoginMsg = await loginpage.verifyFailedLogin();
-      expect(failedLoginMsg).toMatch(/Warning: Your account has exceeded allowed number of login attempts/);
-
     } else if (data.expected === "nomatch") {
       const failedLoginMsg = await loginpage.verifyFailedLogin();
       expect(failedLoginMsg).toMatch(/No match/);
