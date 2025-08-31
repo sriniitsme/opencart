@@ -1,1 +1,1 @@
-[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":10,"buildName":"Opencart #10","buildUrl":"http://localhost:8080/job/opencart%20job/10/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/opencart%20job/10/allure"}]
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":17,"buildName":"Opencart #17","buildUrl":"http://localhost:8080/job/opencart%20job/17/","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/opencart%20job/17/allure"}]
