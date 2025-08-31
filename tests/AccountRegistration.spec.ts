@@ -21,7 +21,7 @@ test.afterEach(async ({ page }) => {
     await page.close()
 })
 
-test('user resigtrtion test @master @sanity @regression', async ({ page }) => {
+test('user resigtrtion test @regression', async ({ page }) => {
     await homePage.clickMyAccount()
     await homePage.clickOnRegister()
     await registrationPage.enterFirstName(RandomDataUtil.getFirstName())

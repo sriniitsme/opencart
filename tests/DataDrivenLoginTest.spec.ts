@@ -10,7 +10,7 @@ const JSONfilepath = "data/logindata.json";
 const testdata = DataProvider.getTestDataFromJson(JSONfilepath);
 
 for (const data of testdata) {
-  test(`Verify ${data.testName} @regression`, async ({ page }) => {
+  test(`Verify ${data.testName} @sanity`, async ({ page }) => {
     const config = new TestConfig();
     await page.goto(config.appUrl);
 
@@ -30,7 +30,7 @@ for (const data of testdata) {
       expect(successLoginMsg).toMatch(/My Account/);
     } else {
       const failedLoginMsg = await loginpage.verifyFailedLogin();
-      expect(failedLoginMsg).toMatch(/No match/);
+      expect(failedLoginMsg).toMatch(/Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour./);
     }
   });
 }

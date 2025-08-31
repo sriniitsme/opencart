@@ -25,7 +25,7 @@ test.afterEach(async ({ page }) => {
   await page.waitForTimeout(1000);
 });
 
-test('verifyLogin @master @sanity @regression', async ({ page }) => {
+test('verifyLogin @master', async ({ page }) => {
   homePage = new HomePage(page);
   registrationPage = new RegistrationPage(page);
   loginPage = new LoginPage(page);
